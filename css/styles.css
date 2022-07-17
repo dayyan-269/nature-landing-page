@@ -31,7 +31,7 @@
 }
 
 .hero-img {
-    background-image: url('/assets/hero-img.jpg');
+    background-image: url('../assets/hero-img.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@
 #activities {
     margin-top: 4em;
     background-color: #000;
-    background-image: url('/assets/service.jpg');
+    background-image: url('../assets/service.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
