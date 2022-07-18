@@ -19,7 +19,7 @@
                 <div>
                     <a href="#" class="logo pointer text--white text-weight--bold">.Nature</a>
                 </div>
-                <div class="flex flex--row">
+                <div id="main-menu" class="flex flex--row">
                     <ul class="flex flex--row">
                         <li class="mx--2 list--none">
                             <a href="#home" class="text--white">Home</a>
@@ -28,7 +28,10 @@
                             <a href="#about" class="text--white">About Us</a>
                         </li>
                         <li class="mx--2 list--none">
-                            <a href="#service" class="text--white">Activities</a>
+                            <a href="#activities" class="text--white">Activities</a>
+                        </li>
+                        <li class="mx--2 list--none">
+                            <a href="#blog" class="text--white">Blog</a>
                         </li>
                     </ul>
                 </div>
@@ -38,20 +41,19 @@
         <!-- HERO SECTION -->
         <section id="hero" class="hero flex flex--row container mx--auto">
             <div class="hero-img absolute w--100 h--100"></div>
-            <div class="hero-content my--auto w--50 absolute text--white">
+            <div class="hero-content my--auto text--white">
                 <h1 class="hero-title text--lg">Enjoy The Natural Landscape</h1>
-                <p class="hero-text mt--1">
+                <p class="hero-text mt--1 text--md">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora quis voluptas sequi omnis,
-                    cupiditate quam aliquam consectetur magni temporibus excepturi commodi nemo ullam! Recusandae facere
-                    quisquam voluptatibus fugit.
+                    cupiditate quam aliquam consectetur magni temporibus excepturi commodi nemo ullam!
                 </p>
                 <div class="flex flex--row gap--md mt--3">
                     <button
-                        class="btn bg--white uppercase border border--white text-weight--semibold flex flex--row align--center gap--sm">
+                        class="btn bg--white uppercase border border--white text--md text-weight--semibold flex flex--row align--center gap--sm">
                         Visit Us
                         <i class='bx bx-right-top-arrow-circle bx-sm'></i>
                     </button>
-                    <button class="btn bg--transparent uppercase border border--white text--white text-weight--semibold">
+                    <button class="btn bg--transparent uppercase border border--white text--md text--white text-weight--semibold">
                         Learn More
                     </button>
                 </div>
@@ -59,7 +61,7 @@
         </section>
 
         <!-- ABOUT SECTION -->
-        <section id="about" class="container mx--auto py--5">
+        <section id="about" class="container mx--auto">
             <div class="flex flex--row">
                 <div class="flex flex--col content--center">
                     <h1 class="">About Us</h1>
@@ -71,12 +73,12 @@
                         veritatis. Repellat.
                     </p>
                     <div class="flex mt--2">
-                        <button class="btn bg--primary uppercase text--white flex flex--row align--center gap--sm">
+                        <button class="btn bg--secondary uppercase text--md text--white flex flex--row align--center gap--sm">
                             Location
                         </button>
                     </div>
                 </div>
-                <aside class="flex flex--col align--end relative">
+                <aside class="self-container flex flex--col align--end relative">
                     <img src="./assets/self.jpg" class="self-potrait rounded">
                     <div class="potrait-desc text--md py--3 px--3 bg--light absolute">
                         <span class="text-weight--semibold">
@@ -90,20 +92,18 @@
         </section>
 
         <!-- ACTIVITIES -->
-        <section id="activities" class="relative py--5 mt--5 flex flex--col">
+        <section id="activities" class="relative py--5 flex flex--col">
             <div class="filter"></div>
             <h1 class="text--white text--center">
                 What can you do
             </h1>
             <div class="service-content container mt--3 mx--auto gap--lg">
-                <article class="flex flex--col gap--md">
+                <article class="flex flex--col gap--md w--100 pointer">
                     <img src="./assets/act-1.jpg" class="service-img w--100 rounded">
                     <div class="content-body">
-                        <a href="#">
-                            <h3 class="text--white">
-                                Lorem, ipsum dolor.
-                            </h3>
-                        </a>
+                        <header class="text--white text--sl text-weight--bold">
+                            Lorem, ipsum dolor.
+                        </header>
                         <p class="text--white text-weight--light text--md">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Molestias
@@ -111,20 +111,19 @@
                             inventore eaque, tenetur sit.
                         </p>
                     </div>
-                    <button
-                        class="flex flex--row gap--sm align--center btn w--fit bg--secondary uppercase text--white px--3 py--1">
-                        Read More
-                        <i class='bx bx-right-arrow-circle bx-sm'></i>
-                    </button>
+                    <footer>
+                        <button class="flex flex--row gap--sm align--center btn w--fit bg--accent uppercase px--3 py--1 text--md">
+                            Read More
+                            <i class='bx bx-right-arrow-circle bx-sm'></i>
+                        </button>
+                    </footer>
                 </article>
-                <article class="flex flex--col gap--md">
+                <article class="flex flex--col gap--md w--100 pointer">
                     <img src="./assets/act-2.jpg" class="service-img w--100 rounded">
                     <div class="content-body">
-                        <a href="#">
-                            <h3 class="text--white">
-                                Lorem, ipsum dolor.
-                            </h3>
-                        </a>
+                        <header class="text--white text--sl text-weight--bold">
+                            Lorem, ipsum dolor.
+                        </header>
                         <p class="text--white text-weight--light text--md">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Molestias
@@ -132,19 +131,19 @@
                             inventore eaque, tenetur sit.
                         </p>
                     </div>
-                    <button class="flex flex--row gap--sm align--center btn w--fit bg--secondary uppercase text--white px--3 py--1">
-                        Read More
-                        <i class='bx bx-right-arrow-circle bx-sm'></i>
-                    </button>
+                    <footer>
+                        <button class="flex flex--row gap--sm align--center btn w--fit bg--accent uppercase px--3 py--1 text--md">
+                            Read More
+                            <i class='bx bx-right-arrow-circle bx-sm'></i>
+                        </button>
+                    </footer>
                 </article>
-                <article class="flex flex--col gap--md">
+                <article class="flex flex--col gap--md w--100 pointer">
                     <img src="./assets/act-3.jpg" class="service-img w--100 rounded">
                     <div class="content-body">
-                        <a href="#">
-                            <h3 class="text--white">
-                                Lorem, ipsum dolor.
-                            </h3>
-                        </a>
+                        <header class="text--white text--sl text-weight--bold">
+                            Lorem, ipsum dolor.
+                        </header>
                         <p class="text--white text-weight--light text--md">
                             Lorem ipsum dolor sit amet, consectetur adipisicing
                             elit. Molestias
@@ -152,16 +151,122 @@
                             inventore eaque, tenetur sit.
                         </p>
                     </div>
-                    <button class="flex flex--row gap--sm align--center btn w--fit bg--secondary uppercase text--white px--3 py--1">
-                        Read More
-                        <i class='bx bx-right-arrow-circle bx-sm'></i>
-                    </button>
+                    <footer>
+                        <button class="flex flex--row gap--sm align--center btn w--fit bg--accent uppercase px--3 py--1 text--md">
+                            Read More
+                            <i class='bx bx-right-arrow-circle bx-sm'></i>
+                        </button>
+                    </footer>
                 </article>
             </div>
         </section>
 
-
+        <section id="blog" class="container flex flex--row align--center gap--md mx--auto py--5">
+            <div>
+                <i class='bx bx-news bx-lg'></i>
+                <h1>
+                    Most Recent News
+                </h1>
+            </div>
+            <div class="blog-container">
+                <article class="blog-item flex flex--col gap--md rounded pointer">
+                    <img src="./assets/blog-1.jpg" class="blog-img w--100">
+                    <div class="content-body px--2">
+                        <header class="text--sl text-weight--bold">
+                            Lorem, ipsum dolor.
+                        </header>
+                        <p class="text--md">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Molestias
+                            consequuntur laboriosam
+                            inventore eaque, tenetur sit.
+                        </p>
+                        <button class="flex flex--row gap--sm align--center btn btn--no-floating w--fit bg--secondary uppercase text--md text--white px--3 py--1 my--2">
+                            Read More
+                            <i class='bx bx-right-arrow-circle bx-sm'></i>
+                        </button>
+                    </div>
+                </article>
+                <article class="blog-item flex flex--col gap--md rounded pointer">
+                    <img src="./assets/blog-2.jpg" class="blog-img w--100">
+                    <div class="content-body px--2">
+                        <header class="text--sl text-weight--bold">
+                            Lorem, ipsum dolor.
+                        </header>
+                        <p class="text--md">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Molestias
+                            consequuntur laboriosam
+                            inventore eaque, tenetur sit.
+                        </p>
+                        <button
+                            class="flex flex--row gap--sm align--center btn btn--no-floating w--fit bg--secondary uppercase text--md text--white px--3 py--1 my--2">
+                            Read More
+                            <i class='bx bx-right-arrow-circle bx-sm'></i>
+                        </button>
+                    </div>
+                </article>
+                <article class="blog-item flex flex--col gap--md rounded pointer">
+                    <img src="./assets/blog-3.jpg" class="blog-img w--100">
+                    <div class="content-body px--2">
+                        <header class="text--sl text-weight--bold">
+                            Lorem, ipsum dolor.
+                        </header>
+                        <p class="text--md">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Molestias
+                            consequuntur laboriosam
+                            inventore eaque, tenetur sit.
+                        </p>
+                        <button
+                            class="flex flex--row gap--sm align--center btn btn--no-floating w--fit bg--secondary uppercase text--md text--white px--3 py--1 my--2">
+                            Read More
+                            <i class='bx bx-right-arrow-circle bx-sm'></i>
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer bg--primary py--4 relative">
+        <div class="container flex flex--col gap--lg mx--auto">
+            <div class="flex flex--col gap--sm">
+                <div class="social-icon flex flex--row content--center align--center gap--md">
+                    <a href="#" class="text--white">
+                        <i class='bx bxl-twitter bx-sm'></i>
+                    </a>
+                    <a href="#" class="text--white">
+                        <i class='bx bxl-instagram bx-sm'></i>
+                    </a>
+                    <a href="#" class="text--white">
+                        <i class='bx bxl-facebook bx-sm'></i>
+                    </a>
+                </div>
+                <p class="text--center text--white text-weight--bold">
+                    Connect with us
+                </p>
+            </div>
+            <div class="footer-info flex flex--row content--between align--center gap--md">
+                <div>
+                    <ul class="flex flex--row content--center align--center gap--md list--none text--md">
+                        <li class="pointer">
+                            <a href="#" class="text--white">Contact Us</a>
+                        </li>
+                        <li class="pointer">
+                            <a href="#" class="text--white">History</a>
+                        </li>
+                        <li class="pointer">
+                            <a href="#" class="text--white">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="text--center text--white text--md">
+                    Created by <a href="#" class="text--white underline">@syehan269</a>
+                </p>
+            </div>
+        </div>
+    </footer>
     <script defer src="./js/script.js"></script>
 </body>
 
